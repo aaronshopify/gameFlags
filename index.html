@@ -537,13 +537,14 @@
                 
                 const countryName = document.createElement('div');
                 countryName.className = 'quiz-country';
-                countryName.textContent = country.name;
+                countryName.textContent = 'Country Name';
                 
                 flagItem.appendChild(flag);
                 flagItem.appendChild(countryName);
                 
                 flagItem.onclick = () => {
                     countryName.classList.add('revealed');
+                    countryName.textContent = country.name;
                 };
                 
                 quizFlags.appendChild(flagItem);
